@@ -11,11 +11,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
-Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree'
-
-Plug 'ctrlpvim/ctrlp.vim' 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'kchmck/vim-coffee-script'  
+Plug 'yegappan/mru'
 call plug#end()
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
