@@ -11,10 +11,13 @@ set nojoinspaces
 set incsearch
 set history=1000
 "" keep lines above and below the cursor
-"set scrolloff=5
+set scrolloff=5
 "" show incomplete comman.
-"set showcmd
-"set wildmenu
+set showcmd
+set wildmenu
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Auto indent
 set ai
@@ -35,5 +38,5 @@ call plug#end()
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning ='⚠️' 
 let g:airline#extensions#ale#enabled = 1
-
+let g:jsx_ext_required = 0
 map <c-p> :FZF <Enter>
